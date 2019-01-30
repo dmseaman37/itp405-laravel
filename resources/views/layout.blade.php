@@ -7,6 +7,8 @@
 </head>
 
 <body>
-	@yield('main')
+	<div class="container-fluid">
+		@yield('main')
+	</div>
 </body>
 </html>

@@ -15,5 +15,10 @@
 Route::get('/', 'InvoicesController@index');
 Route::get('/genres', 'GenresController@index');
 Route::get('/tracks', 'TracksController@index');
+Route::get('/playlists', 'PlaylistController@index');
+Route::get('/playlists/new', 'PlaylistController@create');
+Route::get('/playlists/{id}', 'PlaylistController@index');
+Route::post('/playlists/new', 'PlaylistController@store');
+
 
 // Route->Controller->View
