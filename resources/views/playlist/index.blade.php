@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('tilte', 'Playlists')
+@section('title', 'Playlists')
 
 @section('main')
 <div class="row">

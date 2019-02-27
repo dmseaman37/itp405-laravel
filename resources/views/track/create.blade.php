@@ -26,13 +26,13 @@
 
     		<div class="form-group">
       			<label for="media-type">Media Type</label>
-      			<select id="media-type" name="mediaType" class="form-control" value="{{old('media-type')}}">
+      			<select id="media-type" name="mediaType" class="form-control" value="{{old('mediaType')}}">
       				<option selected disabled>-- Select One --</option>
       				@foreach ($mediaTypes as $mediaType)
-      					<option value="{{$mediaType->MediaTypeId}}" {{$mediaType->MediaTypeId == old('media-type') ? "selected" : ""}}>{{$mediaType->MediaType}}</option>
+      					<option value="{{$mediaType->MediaTypeId}}" {{$mediaType->MediaTypeId == old('mediaType') ? "selected" : ""}}>{{$mediaType->MediaType}}</option>
       				@endforeach
       			</select>
-      			<small class="text-danger">{{$errors->first('media-type')}}</small>
+      			<small class="text-danger">{{$errors->first('mediaType')}}</small>
     		</div>
 
     		<div class="form-group">
@@ -66,8 +66,8 @@
 
     		<div class="form-group">
       			<label for="unit-price">Unit Price</label>
-      			<input type="number" id="unit-price" name="unitPrice" class="form-control" value="{{old('unit-price')}}">
-      			<small class="text-danger">{{$errors->first('unit-price')}}</small>
+      			<input type="number" id="unit-price" name="unitPrice" class="form-control" value="{{old('unitPrice')}}">
+      			<small class="text-danger">{{$errors->first('unitPrice')}}</small>
     		</div>
 
     		<button type="submit" class="btn btn-primary">
